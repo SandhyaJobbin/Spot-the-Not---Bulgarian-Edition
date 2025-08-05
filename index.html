@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spot the Not - Portuguese Edition</title>
+    <title>Spot the Not - Bulgarian Edition</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -130,32 +130,31 @@
     <div id="welcomeScreen" class="min-h-screen flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-3xl w-full text-center">
             <div class="mb-6">
-                <h1 class="text-4xl font-bold text-gray-800 mb-2">Spot the Not - Portuguese Edition</h1>
-                <p class="text-xl text-gray-600 italic">"Olá Detective! Time to Catch Some Fake Docs!"</p>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Spot the Not - Bulgarian Edition</h1>
+                <p class="text-xl text-gray-600 italic">"Train the Eye. Spot the Lie. Validate with Confidence."</p>
             </div>
 
             <div class="bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-xl mb-6">
-                <h2 class="text-2xl font-bold mb-4">🇵🇹 Welcome to the Portuguese Document Verification Academy! 🕵️‍♀️
+                <h2 class="text-2xl font-bold mb-4">🕵️‍♀️ Welcome to the Ultimate Document Detective Challenge! 🕵️‍♂️
                 </h2>
-                <p class="text-lg mb-4">Ready to become the Sherlock Holmes of Portuguese paperwork? You'll face 10
-                    sneaky documents that are trying harder to fool you than a tourist asking for directions in Porto!
-                </p>
-                <p class="text-base">Some are legit as pastéis de nata, others are faker than a plastic cork! Your
-                    mission: separate the real from the ridiculous! 🥐</p>
+                <p class="text-lg mb-4">Ready to become the Sherlock Holmes of fake documents? You'll face 10 sneaky
+                    Bulgarian IDs that are desperately trying to fool you!</p>
+                <p class="text-base">Some are legit, some are faker than a three-dollar bill. Your mission: separate the
+                    wheat from the chaff! 🌾</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-4 mb-6 text-left">
                 <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                    <h3 class="font-semibold text-green-800 mb-2">💰 How to Score Like Cristiano:</h3>
+                    <h3 class="font-semibold text-green-800 mb-2">💰 How to Get Rich (in Points):</h3>
                     <ul class="text-sm text-green-700 space-y-1">
                         <li>• Nail the answer: +15 points</li>
                         <li>• Lightning fast reflexes: +10 bonus</li>
-                        <li>• Epic fail: 0 points (happens to the best of us!)</li>
+                        <li>• Epic fail: 0 points (we don't judge... much)</li>
                     </ul>
                 </div>
 
                 <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
-                    <h3 class="font-semibold text-blue-800 mb-2">🏆 Your Potential Glory:</h3>
+                    <h3 class="font-semibold text-blue-800 mb-2">🎖️ Your Potential Status:</h3>
                     <ul class="text-sm text-blue-700 space-y-1">
                         <li>• 120+: Ready to Moderate 🧙‍♂️</li>
                         <li>• 100-110: Needs Training 🎓</li>
@@ -166,8 +165,7 @@
 
             <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500 mb-6">
                 <p class="text-yellow-800"><strong>⏰ Pro Tip:</strong> You've got ~20 minutes of pure detective action
-                    ahead. When the timer hits 30 seconds, we'll give you a friendly panic attack reminder that's louder
-                    than a Fado singer! 🎵</p>
+                    ahead. When the timer hits 30 seconds, we'll give you a friendly panic attack reminder! 😱</p>
             </div>
 
             <div class="text-center">
@@ -179,7 +177,7 @@
                 </div>
                 <button onclick="startGame()"
                     class="bg-gradient-to-r from-primary to-secondary text-white px-10 py-5 rounded-xl text-xl font-bold hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-pulse">
-                    🚀 Vamos! Let's Hunt Some Fakes!
+                    🚀 Let's Hunt Some Fakes!
                 </button>
             </div>
         </div>
@@ -191,17 +189,17 @@
         <div class="bg-white rounded-xl shadow-lg p-4 mb-6">
             <div class="flex justify-between items-center mb-4">
                 <div>
-                    <h2 class="text-2xl font-bold text-gray-800">🔍 Portuguese Document Verification HQ</h2>
-                    <p class="text-gray-600">Case <span id="currentQuestion">1</span> of 10 • <span
-                            id="gameStatus">Investigating like a pro...</span></p>
+                    <h2 class="text-2xl font-bold text-gray-800">🔍 Document Detective HQ</h2>
+                    <p class="text-gray-600">Case <span id="currentQuestion">1</span> of 10 • <span id="gameStatus">On
+                            the hunt...</span></p>
                 </div>
                 <div class="flex items-center space-x-6">
                     <div class="text-center">
                         <div class="text-3xl font-bold text-primary" id="scoreDisplay">0</div>
-                        <div class="text-sm text-gray-600">Verification Points</div>
+                        <div class="text-sm text-gray-600">Detective Points</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl font-bold" id="timerDisplay">1200</div>
+                        <div class="text-3xl font-bold" id="timerDisplay">150</div>
                         <div class="text-sm text-gray-600">Seconds Left</div>
                     </div>
                 </div>
@@ -217,24 +215,24 @@
         <!-- Question Card -->
         <div class="bg-white rounded-xl shadow-lg p-6 max-w-5xl mx-auto">
             <div class="text-center mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-2">🎯 Portuguese Document Challenge #<span
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">🎯 Detective Challenge #<span
                         id="questionNumber">1</span></h3>
-                <p class="text-gray-600 text-lg">Is this Portuguese document authentic or a sneaky imposter trying to
-                    fool the system?</p>
-                <p class="text-sm text-gray-500 mt-2">Remember: Even the best fakes have tells. Trust your Portuguese
-                    document training!</p>
+                <p class="text-gray-600 text-lg">Is this Bulgarian ID document authentic or a sneaky imposter?</p>
+                <p class="text-sm text-gray-500 mt-2">Remember: Even the best fakes have tells. Trust your training!</p>
             </div>
 
             <!-- Document Image -->
             <div
                 class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl p-8 mb-6 text-center border-2 border-dashed border-gray-300">
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden border">
-                    <img id="documentImage" src="1.jpg" alt="Portuguese Document"
+                    <img id="documentImage" src="https://www.example.com/image.jpg" alt="Bulgarian ID Document"
                         class="w-full h-80 object-contain bg-gray-50">
                 </div>
-                <p class="text-sm text-gray-600 mt-4 italic">💡 Look for inconsistencies in fonts, dates, MRZ zones, and
-                    photo placement</p>
+                <p class="text-sm text-gray-600 mt-4 italic">💡 Look for inconsistencies in fonts, colors, dates, and
+                    layout alignment</p>
             </div>
+
+
 
             <!-- Answer Buttons -->
             <div class="grid md:grid-cols-2 gap-6">
@@ -242,15 +240,14 @@
                     class="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white p-8 rounded-xl text-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                     <div class="text-4xl mb-2">✅</div>
                     <div class="text-2xl mb-2">ACCEPT</div>
-                    <div class="text-sm opacity-90">This document is legit as a Portuguese custard tart!</div>
-                    <div class="text-xs mt-2 opacity-75 group-hover:opacity-100">Click if it passes the authenticity
-                        test 👍</div>
+                    <div class="text-sm opacity-90">This document passes the sniff test!</div>
+                    <div class="text-xs mt-2 opacity-75 group-hover:opacity-100">Click if it looks legit 👍</div>
                 </button>
                 <button onclick="submitAnswer(false)"
                     class="group bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white p-8 rounded-xl text-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                     <div class="text-4xl mb-2">❌</div>
                     <div class="text-2xl mb-2">REJECT</div>
-                    <div class="text-sm opacity-90">Something's fishier than yesterday's bacalhau...</div>
+                    <div class="text-sm opacity-90">Something's fishy about this one...</div>
                     <div class="text-xs mt-2 opacity-75 group-hover:opacity-100">Click if it's suspicious 🚨</div>
                 </button>
             </div>
@@ -263,7 +260,7 @@
             <div class="text-8xl mb-4">⏰</div>
             <h3 class="text-3xl font-bold text-red-600 mb-3">PANIC MODE ACTIVATED!</h3>
             <p class="text-xl text-gray-700 mb-4">Less than 30 seconds remaining!</p>
-            <p class="text-lg text-gray-600 mb-4">Make your move faster than a Lisbon tram! 🚋💨</p>
+            <p class="text-lg text-gray-600 mb-4">Make your move, detective! 🏃‍♂️💨</p>
             <div class="text-5xl font-bold text-red-600" id="warningTimer">30</div>
         </div>
     </div>
@@ -272,7 +269,7 @@
     <div id="scorePopup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
         <div class="bg-white rounded-2xl p-10 text-center score-popup max-w-md">
             <div class="text-8xl mb-4" id="scoreEmoji">🎉</div>
-            <h3 class="text-3xl font-bold mb-3" id="scoreTitle">Fantástico!</h3>
+            <h3 class="text-3xl font-bold mb-3" id="scoreTitle">Brilliant!</h3>
             <p class="text-xl text-gray-700 mb-4" id="scoreMessage">You earned 25 points!</p>
             <div class="text-5xl font-bold text-primary mb-2" id="scorePoints">+25</div>
             <div class="text-lg text-gray-600" id="totalScore">Total: 25 points</div>
@@ -285,7 +282,7 @@
             <div class="text-center mb-6">
                 <div class="text-6xl mb-4">🚨</div>
                 <h3 class="text-3xl font-bold text-red-600 mb-3">Document Analysis</h3>
-                <p class="text-lg text-gray-600">Here's what made this Portuguese document suspicious:</p>
+                <p class="text-lg text-gray-600">Here's what made this document suspicious:</p>
             </div>
 
             <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mb-6">
@@ -295,16 +292,15 @@
 
             <div class="bg-blue-50 p-4 rounded-lg mb-6">
                 <p class="text-blue-800 text-sm">
-                    <strong>💡 Verification Tip:</strong> Remember this pattern for future Portuguese documents.
-                    Authentic documents follow strict Portuguese government standards - any deviation is a potential red
-                    flag!
+                    <strong>💡 Detective Tip:</strong> Remember this pattern for future cases. Real documents follow
+                    strict standards - any deviation is a potential red flag!
                 </p>
             </div>
 
             <div class="text-center">
                 <button onclick="closeRejectionPopup()"
                     class="bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl text-lg font-bold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                    📚 Obrigado! Continue Learning
+                    📚 Got It! Continue Learning
                 </button>
             </div>
         </div>
@@ -316,15 +312,14 @@
             <div class="text-center mb-8">
                 <div class="text-8xl mb-4" id="resultEmoji">🎉</div>
                 <h2 class="text-4xl font-bold text-gray-800 mb-3" id="resultTitle">Case Closed!</h2>
-                <p class="text-xl text-gray-600" id="resultSubtitle">You've conquered the Portuguese document detection
-                    challenge!</p>
+                <p class="text-xl text-gray-600" id="resultSubtitle">You've conquered the document detection gauntlet!
+                </p>
             </div>
 
             <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 rounded-xl mb-8 text-center">
                 <div class="text-6xl font-bold mb-3" id="finalScore">85</div>
-                <div class="text-2xl mb-2" id="finalGrade">Needs Training</div>
-                <div class="text-lg opacity-90" id="finalMessage">Not bad for a rookie Portuguese document detective!
-                </div>
+                <div class="text-2xl mb-2" id="finalGrade">Promising Padawan</div>
+                <div class="text-lg opacity-90" id="finalMessage">Not bad for a rookie detective!</div>
             </div>
 
             <!-- Performance Stats -->
@@ -349,11 +344,11 @@
             <div class="text-center">
                 <button onclick="generateCertificate()" id="certificateBtn"
                     class="bg-gradient-to-r from-primary to-secondary text-white px-10 py-5 rounded-xl text-xl font-bold hover:shadow-xl transform hover:scale-105 transition-all duration-300 mr-4">
-                    🏆 Claim My Portuguese Verification Badge
+                    🏆 Claim My Detective Badge
                 </button>
                 <button onclick="restartGame()"
                     class="bg-gray-500 hover:bg-gray-600 text-white px-10 py-5 rounded-xl text-xl font-bold transition-all duration-300">
-                    🔄 Another Round of Portuguese Justice
+                    🔄 Another Round of Justice
                 </button>
             </div>
         </div>
@@ -363,15 +358,15 @@
     <div id="certificateScreen" class="hidden min-h-screen flex items-center justify-center p-4">
         <div class="certificate rounded-2xl shadow-2xl p-10 max-w-5xl w-full text-white text-center">
             <div class="border-4 border-yellow-300 rounded-xl p-10">
-                <h1 class="text-5xl font-bold mb-6">🏆 OFFICIAL PORTUGUESE VERIFICATION CERTIFICATE 🏆</h1>
-                <div class="text-3xl mb-8">Portuguese Document Detection Academy</div>
+                <h1 class="text-5xl font-bold mb-6">🏆 OFFICIAL DETECTIVE CERTIFICATE 🏆</h1>
+                <div class="text-3xl mb-8">Document Detection Academy</div>
 
                 <div class="text-2xl mb-6">This hereby certifies that</div>
                 <div class="text-4xl font-bold mb-8 bg-white text-gray-800 p-6 rounded-lg shadow-lg"
-                    id="certificateName">Master Portuguese Document Specialist</div>
+                    id="certificateName">Master Document Detective</div>
 
                 <div class="text-xl mb-6">has successfully completed the legendary</div>
-                <div class="text-3xl font-bold mb-8">Spot the Not - Portuguese Edition Challenge</div>
+                <div class="text-3xl font-bold mb-8">Spot the Not - Bulgarian Edition Challenge</div>
 
                 <div class="grid md:grid-cols-3 gap-6 mb-8">
                     <div class="bg-white bg-opacity-20 p-6 rounded-lg">
@@ -379,8 +374,8 @@
                         <div class="text-lg">Final Score</div>
                     </div>
                     <div class="bg-white bg-opacity-20 p-6 rounded-lg">
-                        <div class="text-3xl font-bold" id="certGrade">Training Needed</div>
-                        <div class="text-lg">Specialist Rank</div>
+                        <div class="text-3xl font-bold" id="certGrade">Padawan</div>
+                        <div class="text-lg">Detective Rank</div>
                     </div>
                     <div class="bg-white bg-opacity-20 p-6 rounded-lg">
                         <div class="text-3xl font-bold">10</div>
@@ -389,85 +384,58 @@
                 </div>
 
                 <div class="text-lg mb-4" id="certDate">Awarded on: December 2024</div>
-                <div class="text-xl italic mb-6">"Olá Detective! Time to Catch Some Fake Docs!"</div>
-                <div class="text-lg">🇵🇹 Keep your eyes sharp and your Portuguese document skills sharper! 🇵🇹</div>
+                <div class="text-xl italic mb-6">"Train the Eye. Spot the Lie. Validate with Confidence."</div>
+                <div class="text-lg">🔍 Keep your eyes sharp and your instincts sharper! 🔍</div>
             </div>
 
             <button onclick="restartGame()"
                 class="mt-8 bg-white text-primary px-10 py-5 rounded-xl text-xl font-bold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                🎮 Hunt More Portuguese Fakes
+                🎮 Hunt More Fakes
             </button>
         </div>
     </div>
 
     <script>
-        // Portuguese document data with 10 documents
+        // Enhanced game data with 10 documents
         const documents = [
             {
-                id: 1,
-                correct: true,
-                reason: null,
-                imageUrl: "1.jpg"
+                id: 1, correct: true, reason: null, imageUrl: "1.jpg"
             },
             {
-                id: 2,
-                correct: false,
-                reason: "Birth year on card (1996) conflicts with EGN encoding (1995), indicating altered date or invalid checksum.",
+                id: 2, correct: false, reason: "Birth year on card (1996) conflicts with EGN encoding (1995), indicating altered date or invalid checksum.",
                 imageUrl: "2 Fake.png"
             },
             {
-                id: 3,
-                correct: false,
-                reason: "Last name 'RAVINA' uses a different font style, suggesting tampering and non-standard formatting.",
-                imageUrl: "3 Fake.png"
+                id: 3, correct: false, reason: "Last name 'RAVINA' uses a different font style, suggesting tampering and non-standard formatting.", imageUrl: "3 Fake.png"
             },
             {
-                id: 4,
-                correct: true,
-                reason: null,
-                imageUrl: "4.png"
+                id: 4, correct: true, reason: null, imageUrl: "4.png"
             },
             {
-                id: 5,
-                correct: false,
-                reason: "Romanian flag shown instead of Bulgarian, indicating incorrect national insignia.",
-                imageUrl: "5 fake.JPG"
+                id: 5, correct: false, reason: "Romanian flag shown instead of Bulgarian, indicating incorrect national insignia.", imageUrl: "5 fake.JPG"
             },
             {
-                id: 6,
-                correct: false,
-                reason: "Gender marker 'M' contradicts female photo, violating ICAO and Bulgarian ID standards.",
+                id: 6, correct: false, reason: "Gender marker 'M' contradicts female photo, violating ICAO and Bulgarian ID standards.",
                 imageUrl: "6 fake.png"
             },
             {
-                id: 7,
-                correct: true,
-                reason: null,
-                imageUrl: "7.jpg"
+                id: 7, correct: true, reason: null, imageUrl: "7.jpg"
             },
             {
-                id: 8,
-                correct: false,
-                reason: "Expiry date of 2044 exceeds Bulgaria’s legal 10-year validity limit.",
-                imageUrl: "8 fake.PNG"
+                id: 8, correct: false, reason: "Expiry date of 2044 exceeds Bulgaria’s legal 10-year validity limit.", imageUrl: "8 fake.PNG"
             },
             {
-                id: 9,
-                correct: false,
-                reason: "Photo box and texture misaligned; missing security features suggest document manipulation.",
-            imageUrl: "9 Fake.JPG"
+                id: 9, correct: false, reason: "Photo box and texture misaligned; missing security features suggest document manipulation.",
+                imageUrl: "9 Fake.JPG"
             },
             {
-                id: 10,
-                correct: true,
-                reason: null,
-                imageUrl: "10.png"
+                id: 10, correct: true, reason: null, imageUrl: "10.png"
             }
         ];
 
         let currentQuestionIndex = 0;
         let score = 0;
-        let timeRemaining = 1200; // 20 minutes total
+        let timeRemaining = 150; // 2.5 minutes per question on average
         let gameTimer;
         let wrongAnswers = [];
         let correctCount = 0;
@@ -478,38 +446,37 @@
         function startGame() {
             const nameInput = document.getElementById('playerName').value.trim();
             if (!nameInput) {
-                alert('Please enter your name before starting the Portuguese document challenge!');
+                alert('Please enter your name before starting the game!');
                 return;
             }
 
             playerName = nameInput;
             document.getElementById('welcomeScreen').classList.add('hidden');
-            document.getElementById('gameScreen').classList.remove('hidden');
+            document.getElementById('6yweg').classList.remove('hidden');
 
             currentQuestionIndex = 0;
             score = 0;
             wrongAnswers = [];
             correctCount = 0;
             speedBonusCount = 0;
-            timeRemaining = 1200;
-
+            timeRemaining = 150;
             updateDisplay();
             startTimer();
             loadQuestion();
         }
+        void
+            function startTimer() {
+                gameTimer = setInterval(() => {
+                    timeRemaining--;
+                    document.getElementById('timerDisplay').textContent = timeRemaining;
 
-        function startTimer() {
-            gameTimer = setInterval(() => {
-                timeRemaining--;
-                document.getElementById('timerDisplay').textContent = timeRemaining;
-
-                if (timeRemaining <= 30 && timeRemaining > 0) {
-                    showTimerWarning();
-                } else if (timeRemaining <= 0) {
-                    endGame();
-                }
-            }, 1000);
-        }
+                    if (timeRemaining <= 30 && timeRemaining > 0) {
+                        showTimerWarning();
+                    } else if (timeRemaining <= 0) {
+                        endGame();
+                    }
+                }, 1000);
+            }
 
         function showTimerWarning() {
             const warning = document.getElementById('timerWarning');
@@ -529,6 +496,7 @@
 
             document.getElementById('currentQuestion').textContent = currentQuestionIndex + 1;
             document.getElementById('questionNumber').textContent = currentQuestionIndex + 1;
+            // document.getElementById('documentNumber').textContent = doc.id;
 
             // Update document image
             document.getElementById('documentImage').src = doc.imageUrl;
@@ -537,11 +505,11 @@
             const progress = ((currentQuestionIndex + 1) / documents.length) * 100;
             document.getElementById('progressBar').style.width = progress + '%';
 
-            // Update game status with Portuguese flair
+            // Update game status
             const statuses = [
-                "Investigating like a pro...", "Getting into detective mode...", "Channeling your inner Sherlock...",
-                "Halfway through the Portuguese maze...", "Document detective skills activated...", "Almost there, detective...",
-                "Final stretch of Portuguese mysteries...", "Last few Portuguese puzzles...", "Nearly finished with the investigation...", "Final Portuguese document case!"
+                "On the hunt...", "Getting warmed up...", "In the zone...",
+                "Halfway there...", "Detective mode activated...", "Almost done...",
+                "Final stretch...", "Last few cases...", "Nearly finished...", "Final case!"
             ];
             document.getElementById('gameStatus').textContent = statuses[currentQuestionIndex];
         }
@@ -565,20 +533,20 @@
                 if (wasQuick) {
                     points += 10;
                     speedBonusCount++;
-                    message = "Fantástico! Lightning-fast Portuguese verification work!";
+                    message = "Brilliant! Lightning-fast detective work!";
                     emoji = "⚡";
                 } else {
-                    message = "Excelente! Your Portuguese verification instincts are spot on!";
+                    message = "Excellent! Your detective instincts are spot on!";
                     emoji = "🎯";
                 }
                 score += points;
                 createMegaConfetti();
             } else {
-                message = "Oops! Even the best Portuguese specialists have off days...";
+                message = "Oops! Even Sherlock had off days...";
                 emoji = "🤔";
                 wrongAnswers.push({
                     question: currentQuestionIndex + 1,
-                    reason: doc.reason || "This Portuguese document was actually legitimate - no red flags detected!"
+                    reason: doc.reason || "This document was actually legitimate - no red flags detected!"
                 });
             }
 
@@ -590,7 +558,7 @@
                 shouldShowRejectionPopup = false;
             }
 
-            showScorePopup(emoji, isCorrect ? "Portuguese Verification Win!" : "Case Missed", message, points);
+            showScorePopup(emoji, isCorrect ? "Detective Win!" : "Case Missed", message, points);
         }
 
         function closeRejectionPopup() {
@@ -644,7 +612,7 @@
 
         function createMegaConfetti() {
             // Create more intense confetti for correct answers
-            for (let i = 0; i < 150; i++) {
+            for (let i = 0; i < 100; i++) {
                 setTimeout(() => {
                     const confetti = document.createElement('div');
                     confetti.className = 'confetti';
@@ -655,7 +623,7 @@
                     setTimeout(() => {
                         confetti.remove();
                     }, 6000);
-                }, i * 20);
+                }, i * 30);
             }
         }
 
@@ -674,20 +642,20 @@
                 grade = "Ready to Moderate";
                 emoji = "🧙‍♂️";
                 title = "Absolutely Legendary!";
-                subtitle = "You're ready to moderate Portuguese documents like a true master!";
-                message = "Portuguese fake documents tremble before your expert verification skills!";
+                subtitle = "You're ready to moderate like a true master!";
+                message = "The documents tremble before your mighty gaze!";
             } else if (score >= 100) {
                 grade = "Needs Training";
                 emoji = "🎓";
-                title = "Bom Trabalho! Good Foundation!";
-                subtitle = "A bit more Portuguese document training and you'll be ready to moderate!";
-                message = "You've got the Portuguese basics down, keep practicing!";
+                title = "Good Foundation!";
+                subtitle = "A bit more training and you'll be ready to moderate!";
+                message = "You've got the basics down, keep practicing!";
             } else {
                 grade = "High Risk / Not Suitable";
                 emoji = "⚠️";
-                title = "Additional Portuguese Training Required";
-                subtitle = "More practice needed before moderating Portuguese documents";
-                message = "Review the Portuguese answer key below and try again!";
+                title = "Additional Training Required";
+                subtitle = "More practice needed before moderating documents";
+                message = "Review the answer key below and try again!";
                 document.getElementById('certificateBtn').classList.add('hidden');
             }
 
@@ -703,19 +671,19 @@
             document.getElementById('speedBonuses').textContent = speedBonusCount;
             document.getElementById('missedCases').textContent = documents.length - correctCount;
 
-            // Show wrong answers with Portuguese flair
+            // Show wrong answers with witty commentary
             if (wrongAnswers.length > 0) {
                 const wrongAnswersDiv = document.getElementById('wrongAnswers');
                 wrongAnswersDiv.innerHTML = `
                     <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg">
-                        <h3 class="font-bold text-red-800 mb-4 text-xl">🔍 Portuguese Answer Key - Review Your Mistakes:</h3>
+                        <h3 class="font-bold text-red-800 mb-4 text-xl">🔍 Answer Key - Review Your Mistakes:</h3>
                         ${wrongAnswers.map(wa => `
                             <div class="bg-white p-4 rounded-lg mb-3 border-l-2 border-red-300">
-                                <div class="font-semibold text-red-700 mb-1">Portuguese Case #${wa.question} - The One That Got Away:</div>
+                                <div class="font-semibold text-red-700 mb-1">Case #${wa.question} - The One That Got Away:</div>
                                 <div class="text-red-600">${wa.reason}</div>
                             </div>
                         `).join('')}
-                        <p class="text-red-700 text-sm mt-4 italic">💡 Remember these Portuguese red flags for next time, specialist!</p>
+                        <p class="text-red-700 text-sm mt-4 italic">💡 Remember these red flags for next time, detective!</p>
                     </div>
                 `;
             }
@@ -738,7 +706,7 @@
             document.getElementById('welcomeScreen').classList.remove('hidden');
         }
     </script>
-    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9685da3d942b3bc2',t:'MTc1NDA1NjcyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9686158c74a52e7d',t:'MTc1NDA1OTE1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
 
 </html>
